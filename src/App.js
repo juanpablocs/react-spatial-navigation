@@ -1,4 +1,5 @@
 /* eslint-disable react/no-multi-comp */
+/* eslint-disable react/boolean-prop-naming */
 import React from 'react';
 import PropTypes from 'prop-types';
 import shuffle from 'lodash/shuffle';

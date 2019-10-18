@@ -1,3 +1,4 @@
+/* eslint-disable id-length */
 import filter from 'lodash/filter';
 import first from 'lodash/first';
 import sortBy from 'lodash/sortBy';
@@ -486,7 +487,8 @@ class SpatialNavigation {
       this.log('navigateByDirection', 'direction', direction);
       this.smartNavigate(direction);
     } else {
-      this.log('navigateByDirection', `Invalid direction. You passed: \`${direction}\`, but you can use only these: `, validDirections);
+      this.log('navigateByDirection', 'Invalid direction. You passed: ' +
+          `\`${direction}\`, but you can use only these: `, validDirections);
     }
   }
 

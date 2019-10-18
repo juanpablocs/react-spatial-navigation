@@ -1,5 +1,6 @@
-const WIDTH = window.innerWidth;
-const HEIGHT = window.innerHeight;
+/* eslint-disable quotes */
+const WIDTH = typeof window !== "undefined" ? window.innerWidth : 0;
+const HEIGHT = typeof window !== "undefined" ? window.innerHeight : 0;
 
 class VisualDebugger {
   constructor() {
