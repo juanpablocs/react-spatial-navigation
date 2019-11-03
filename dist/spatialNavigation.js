@@ -436,7 +436,7 @@ var SpatialNavigation = function () {
     value: function bindEventHandlers() {
       var _this3 = this;
 
-      if (window) {
+      if (typeof window !== 'undefined') {
         this.keyDownEventListener = function (event) {
           if (_this3.paused === true) {
             return;
@@ -491,7 +491,7 @@ var SpatialNavigation = function () {
   }, {
     key: 'unbindEventHandlers',
     value: function unbindEventHandlers() {
-      if (window) {
+      if (typeof window !== 'undefined') {
         window.removeEventListener('keydown', this.keyDownEventListener);
         this.keyDownEventListener = null;
 
